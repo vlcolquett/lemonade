@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#freetile-test div {
+  width: 290px;
+  height: 290px;
+  margin: 10px;
+  padding: 5px;
+}
+#freetile-test div.row-2 {
+  height: 610px;
+}
+#freetile-test div.col-2 {
+  width: 610px;
+}
+#freetile-test div:nth-child(4n-3) {
+  background: green;
+}
+#freetile-test div:nth-child(4n-2) {
+  background: blue;
+}
+#freetile-test div:nth-child(4n-1) {
+  background: red;
+}
+#freetile-test div:nth-child(4n) {
+  background: yellow;
+}
+@media screen and (max-width: 1300px) {
+  body {
+    background: lightblue;
+  }
+  #freetile-test div {
+    width: 29%;
+    padding: 1%;
+    margin: 1%;
+  }
+  #freetile-test div.col-2 {
+    width: 62%;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    background: lightgreen;
+  }
+  #freetile-test div {
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+  }
+  #freetile-test div.col-2 {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background: indigo;
+  }
+  #freetile-test div {
+    width: 96%;
+    margin: 10px 1%;
+  }
+}
