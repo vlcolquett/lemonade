@@ -21,7 +21,98 @@
 			  display: inline-block;
 			  text-align: left;
 			}
-			</style>
+
+			* {box-sizing: border-box}
+			body {font-family: Verdana, sans-serif; margin:0}
+			.mySlides {display: none}
+			img {vertical-align: middle;}
+
+			/* Slideshow container */
+			.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+			}
+
+			/* Next & previous buttons */
+			.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+			}
+
+			/* Caption text */
+			.text {
+			color: #000000;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+			}
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			color: #000000;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+			background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+			animation-name: fade;
+			animation-duration: 1.5s;
+			}
+
+			@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+			}
+
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			.prev, .next,.text {font-size: 11px}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -50,16 +141,16 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="#bios">Who are we?</a></li>
+							<li><a href="#bad-bracket">The Bracket</a></li>
+							<li><a href="#top">Back to top</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<span class="image main"><img src="images/banner.png" alt="" /></span>
+							<span id="top" class="image main"><img src="images/banner.png" alt="" /></span>
 							<p><span class="image right"><img src="images/helen.png" alt="" /></span>Hi, I'm Helen. You're probably wondering how I got here. It's simple: I am a loser and I have lemonade. What did I lose you ask? I lost this year's March Madness Bracket Challenge among my friends. If you know me, you might not be surprised I am in this situation. If you do not know me, allow me to start from the beginning...</p>
 							<p><i>There was an idea.</i> We had competed against each other in the past for nothing but glory. Now, in the year of our Lord 2023, we all wanted more. Ideas were shared, money buy in and winner gets the pot, the 24 hour Waffle House challenge, among other wagers; but one topped them all: A Lemonade Stand. A lemonade stand during the most popular weekend in the spring in Oxford, Mississippi, Double Decker. Is this punishment or opportunity? Only time will tell, but we can all agree there will be lemonade. If you can't make a trip, no worries. You can still explore this page and be a part of this journey near or far.</p>
 							<p><i>Cheers, all!</i></p>
@@ -70,12 +161,54 @@
 								</ul>
 							</div>
 							<h2>ah, you're still scrolling..</h2>
-							<span class="image main"><img src="images/us.png" alt="" /></span>
-							<h1>Who Are We?</h1>
+							<span id="bios" class="image main"><img src="images/us.png" alt="" /></span>
+							<h1 >Who Are We?</h1>
 							<p><span class="image left"><img src="images/dugan.png" alt="" /></span>This is Dugan. He is born and raised a city boy and found his way to Oxford, MS for the first time in 2016. He has been shouting Hotty Toddy ever since, even better than those who had been blessed with the infamous chant at an early age. To describe Dugan with words would be inaccurate. You just have to meet the guy; or check out his <a href="https://twitter.com/JDuganWalker?s=20">Twitter</a>. Today, you can find Dugan on the Ole Miss campus sharing his love of sports, dad jokes, and everything Ole Miss.</p>
 							<p><span class="image right"><img src="images/lauren.png" alt="" /></span>Lauren is next on the role call. She found her way to Oxford last in the year 2021, but fell into stride with the fanatics of the community. Some have suggested that it was Lauren who brought the last piece to the puzzle of success that the Ole Miss Athletics has seen since her arrival. While she hails from the great state of Ohio, she has enriched the minds of Mississippi youth in the classroom over the last few years. </p>
 							<p><span class="image left"><img src="images/lane.png" alt=""/></span><br>Finally, this is Lane. Believe it or not, she is related to me. While Lane was born and raised in the great state of Mississippi, she has since spread her wings and made her way to another great state: Idaho. We don't worry though, because she visits. Like Dugan, describing Lane in words is inaccurate; you just have to meet her. </p>
-							<p><span class="image right"><img src="images/helen_announce.png" alt=""/></span><br><br>Hold up! You know my name and why I am here, but you don't know MY story! Again, I'm Helen and Oxford has been my home since 2016. I keep it real. Some say I am a natural leader, and maybe you'd agree once you see me with my megaphone. I don't command, I simply direct. basketball brackets may not be my thing, but I am a woman of many other talents. Come see me at the lemonade stand for a chat.</p>
+							<p><span class="image right"><img src="images/helen_announce.png" alt=""/></span><br>Hold up! You know my name and why I am here, but you don't know MY story! Again, I'm Helen and Oxford has been my home since 2016. I keep it real. Some say I am a natural leader, and maybe you'd agree once you see me with my megaphone. I don't command, I simply direct. basketball brackets may not be my thing, but I am a woman of many other talents. Come see me at the lemonade stand for a chat.</p>
+							<h1 id="bad-bracket">How bad was my bracket?</h1>
+							<P>
+								<span class="image fit"><img src="images/stats.png" alt=""/></span>
+								<div class="slideshow-container">
+
+									<div class="mySlides fade">
+									  <div class="numbertext">1 / 4</div>
+									  <img src="images/south.png" style="width:100%">
+									  <div class="text">SOUTH</div>
+									</div>
+									
+									<div class="mySlides fade">
+									  <div class="numbertext">2 / 4</div>
+									  <img src="images/midwest.png" style="width:100%">
+									  <div class="text">MIDWEST</div>
+									</div>
+									
+									<div class="mySlides fade">
+									  <div class="numbertext">3 / 4</div>
+									  <img src="images/east.png" style="width:100%">
+									  <div class="text">EAST</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">4 / 4</div>
+										<img src="images/west.png" style="width:100%">
+										<div class="text">WEST</div>
+									  </div>
+									
+									<a class="prev" onclick="plusSlides(-1)">❮</a>
+									<a class="next" onclick="plusSlides(1)">❯</a>
+									
+									</div>
+									<br>
+									
+									<div style="text-align:center">
+									  <span class="dot" onclick="currentSlide(1)"></span> 
+									  <span class="dot" onclick="currentSlide(2)"></span> 
+									  <span class="dot" onclick="currentSlide(3)"></span> 
+									  <span class="dot" onclick="currentSlide(4)"></span> 
+									</div>
+							</P>
 						</div>
 					</div>
 
@@ -105,17 +238,14 @@
 							<h2>Follow</h2>
 							<ul class="icons">
 								<li><a href="https://twitter.com/lanecolquett" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<!--li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li-->
-								<!--li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li-->
-								<!--li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li-->
+
 								<li><a href="https://github.com/vlcolquett" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<!--li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li-->
-								<!--li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li-->
+
 								<li><a href="mailto:vlcolquett@hotmail.com.com?subject=mail from my website" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 						</section>
 						<ul class="copyright">
-							<li>&copy; Virginia Lane Colquett. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Edited: Lane Colquett - September 2022</li>
+							<li>&copy; Virginia Lane Colquett. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Edited: Lane Colquett - April 2023</li>
 						</ul>
 					</div>
 				</footer>
@@ -123,6 +253,34 @@
 			</div>
 
 		<!-- Scripts -->
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				}
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
