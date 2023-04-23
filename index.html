@@ -261,7 +261,7 @@
 								</div>
 							</section>
 							<h2>If it is more you want, more you shall get!</h2>
-							<div class="col-12 scrollable">
+							<div class="col-12 scrollable" id="scrolled">
 									<span class="image fit" style=" margin: 0cm;"><img src="images/spongebob_beach.png" alt=""/></span>
 									<span class="image fit" style=" margin: 0cm;"><img src="images/spongebob_sky.png" alt=""/></span>
 									<span class="image fit" style=" margin: 0cm;"><img src="images/spongebob_sky.png" alt=""/></span>
@@ -304,6 +304,8 @@
 			<script>
 				function rickroll(){
 					document.getElementById("rickroll").innerHTML = '<iframe class="image fit" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen allow="autoplay"></iframe>'
+					var objDiv = document.getElementById("scrolled");
+					objDiv.scrollTop = objDiv.scrollHeight;
 				}
 				var cards = document.querySelectorAll('.card');
 
