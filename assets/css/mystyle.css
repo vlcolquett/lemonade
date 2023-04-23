@@ -95,15 +95,15 @@ div.list {
   }
 
   /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 200px) {
   .prev, .next,.text {font-size: 11px}
   }
 
       /*##############flip card###################*/
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     perspective: 1000px;
   }
   
@@ -117,7 +117,7 @@ div.list {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
-  .flip-card:active .flip-card-inner {
+  .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
@@ -130,7 +130,7 @@ div.list {
   }
   
   .flip-card-front {
-    background-color: #bbb;
+    background-color: #3876e0;
     color: black;
   }
   
