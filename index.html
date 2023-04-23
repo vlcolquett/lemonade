@@ -47,6 +47,8 @@
 							<li><a href="#donate">Donate!</a></li>
 							<li><a href="#history">Lemonade: A History</a></li>
 							<li><a href="#facts">Facts!</a></li>
+							<li><a href="#queen">Lemonade's Queen</a></li>
+							<li><a href="#contact">Contact</a></li>
 							<li><a href="#top">Back to top</a></li>
 						</ul>
 					</nav>
@@ -258,6 +260,7 @@
 									</span>
 								</div>
 							</section>
+							<h2>If it is more you want, more you shall get!</h2>
 							<div class="col-12 scrollable">
 									<span class="image fit" style=" margin: 0cm;"><img src="images/spongebob_beach.png" alt=""/></span>
 									<span class="image fit" style=" margin: 0cm;"><img src="images/spongebob_sky.png" alt=""/></span>
@@ -267,43 +270,27 @@
 									<span class="image fit" style=" margin: 0cm;"><img src="images/bikini_bottom.png" alt=""/></span>
 									<span class="image fit" style=" margin: 0cm;"><img src="images/plankton.png" alt=""/></span>
 									<span class="image fit" style=" margin: 0cm;"><img src="images/secret_formula.png" alt=""/></span>
-									<a href="https://youtu.be/dQw4w9WgXcQ" class="button primary fit">CLICK ME</a>
+									<a class="button primary fit" onclick="rickroll()">CLICK ME</a>
+									<div id="rickroll"></div>
 							</div>
-							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gM89Q5Eng_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>						</div>
-					</div>
+							<br>
+							<h1 id="queen">Lemonade's Queen</h1>
+							
+							<iframe class="image fit" src="https://www.youtube-nocookie.com/embed/gM89Q5Eng_M" display="none" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							
+						</div>
+				</div>
 
 				<!-- Footer -->
 				<footer id="footer">
 					<div class="inner">
-						<!--section>
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send" class="primary" /></li>
-								</ul>
-							</form>
-						</section-->
-						<!--section>
-							<h2>Follow</h2>
+						
+						<section>
+							<h2 id="contact">Contact</h2>
 							<ul class="icons">
-								<li><a href="https://twitter.com/lanecolquett" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-
-								<li><a href="https://github.com/vlcolquett" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-
-								<li><a href="mailto:vlcolquett@hotmail.com.com?subject=mail from my website" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="mailto:loserslemonade@gmail.com?subject=mail from my website" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-						</section-->
+						</section>
 						<ul class="copyright">
 							<li>&copy; Virginia Lane Colquett. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Edited: Lane Colquett - April 2023</li>
 						</ul>
@@ -314,6 +301,9 @@
 
 		<!-- Scripts -->
 			<script>
+				function rickroll(){
+					document.getElementById("rickroll").innerHTML = '<iframe class="image fit" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+				}
 				var cards = document.querySelectorAll('.card');
 
 				[...cards].forEach((card)=>{
