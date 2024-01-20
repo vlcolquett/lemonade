@@ -1,3 +1,5 @@
+<img align="right" width="250" height="250" src="images/lemon.png">
+
 ## 🔥 Premise
 This site was built using [GitHub Pages](https://pages.github.com/) and uses the Phantom design from [HML5 UP](https://html5up.net).
 
